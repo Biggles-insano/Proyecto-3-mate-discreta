@@ -83,7 +83,7 @@ def combinaciones_objetos_iguales(objetos, r):
         print("-" * 40) 
         return
         
-    # El truco es usar set() para eliminar los duplicados que genera combinations()
+
     lista_combinaciones_unicas = sorted(list(set(combinations(objetos, r))))
     total_combinaciones_unicas = len(lista_combinaciones_unicas)
 
