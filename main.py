@@ -57,7 +57,7 @@ def combinaciones_objetos_diferentes(objetos, r):
     
     # Manejo de error por si se piden más objetos de los que hay
     if r > n:
-        print(f"Error: No se puede seleccionar {r} objetos de un grupo de {n}.")
+        print(f"Error: No se puede seleccionar {r} objetos de un grupo de {n}.") 
         print("-" * 40)
         return
 
@@ -76,11 +76,11 @@ def combinaciones_objetos_iguales(objetos, r):
     Calcula las combinaciones únicas de 'r' objetos cuando hay elementos repetidos.
     """
     print(f"## 4. Combinaciones de Objetos Iguales ##")
-    n = len(objetos)
+    n = len(objetos) 
 
-    if r > n:
+    if r > n: 
         print(f"Error: No se puede seleccionar {r} objetos de un grupo de {n}.")
-        print("-" * 40)
+        print("-" * 40) 
         return
         
     # El truco es usar set() para eliminar los duplicados que genera combinations()
@@ -98,7 +98,7 @@ def combinaciones_objetos_iguales(objetos, r):
 #                           ZONA DE EJECUCIÓN
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":
-    print("🚀 Calculadora de Combinatoria para Mate Discreta 🚀\n")
+    print(" Calculadora de Combinatoria para Mate Discreta \n")
     
     # Ejemplo 1: Permutaciones de objetos diferentes
     permutaciones_objetos_diferentes(['a', 'b', 'c', 'd'])
@@ -107,7 +107,7 @@ if __name__ == "__main__":
     permutaciones_objetos_iguales(['a', 'a', 'b', 'c'])
     
     # Ejemplo 3: Combinaciones de objetos diferentes
-    combinaciones_objetos_diferentes(['a', 'b', 'c', 'd'], 2)
+    combinaciones_objetos_diferentes(['a', 'b', 'c', 'd'], 2) 
     
     # Ejemplo 4: Combinaciones de objetos iguales
-    combinaciones_objetos_iguales(['a', 'a', 'b', 'c'], 2)
+    combinaciones_objetos_iguales(['a', 'a', 'b', 'c'], 2) 
